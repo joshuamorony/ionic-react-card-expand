@@ -1,0 +1,7 @@
+{
+  "name": "card-expand",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "react"
+}

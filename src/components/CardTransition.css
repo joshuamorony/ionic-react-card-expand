@@ -1,0 +1,52 @@
+.card-container {
+  display: block;
+  position: relative;
+  z-index: 1;
+  padding: 10px 0;
+}
+
+.card-container ion-card {
+  height: 200px;
+  margin: 0px;
+  --ion-item-background: #e74c3c;
+  --ion-card-color: #fff;
+}
+
+.card-container ion-card-title {
+  animation: slideIn 0.4s ease-out;
+  --color: #fff;
+}
+
+.card-container ion-card-content, .card-container ion-button {
+  opacity: 0;
+}
+
+.card-container ion-button {
+  position: absolute;
+  top: 10px;
+  right: 0;
+}
+
+.card-placeholder {
+  height: 200px;
+}
+
+.expanded-card {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100% !important;
+  margin: 0 !important;
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateX(-15px);
+    opacity: 0;
+  }
+  to {
+    transform: translateX(0px);
+    opacity: 1;
+  }
+}
